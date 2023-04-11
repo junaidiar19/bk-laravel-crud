@@ -61,6 +61,12 @@ php artisan storage:link
 
 Create folder books
 
+```php
+cd public/storage/
+
+mkdir books
+```
+
 Run the server
 
 ```php
