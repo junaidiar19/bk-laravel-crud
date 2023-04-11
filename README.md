@@ -1,3 +1,8 @@
+# Laravel - CRUD
+
+This project for learning purpose. We have created moduls for this project, you can access it for free on the link below:
+https://bariskoding.com/modul/laravel-beautiful-magical-framework
+
 ## Installation
 
 Clone this repo
