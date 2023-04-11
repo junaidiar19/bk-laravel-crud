@@ -2,7 +2,7 @@
 
 Clone this repo
 
-```javascript
+```php
 git clone https://github.com/junaidiar19/bk-laravel-crud.git
 ```
 
@@ -39,6 +39,14 @@ Symbolic Link of Storage
 
 ```php
 php artisan storage:link
+```
+
+Create folder books
+
+```php
+cd public\storage\
+
+mkdir books
 ```
 
 Run the server
