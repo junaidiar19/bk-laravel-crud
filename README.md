@@ -41,6 +41,18 @@ Generating App Key
 php artisan key:generate
 ```
 
+Migrate
+
+```php
+php artisan migrate
+```
+
+Seeder
+
+```php
+php artisan db:seed
+```
+
 Symbolic Link of Storage
 
 ```php
