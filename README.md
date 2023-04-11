@@ -1,13 +1,14 @@
 # Laravel - CRUD
 
 This project for learning purpose. We have created moduls for this project, you can access it for free on the link below:
+
 https://bariskoding.com/modul/laravel-beautiful-magical-framework
 
 ## Installation
 
 Clone this repo
 
-```php
+```javascript
 git clone https://github.com/junaidiar19/bk-laravel-crud.git
 ```
 
@@ -47,12 +48,6 @@ php artisan storage:link
 ```
 
 Create folder books
-
-```php
-cd public\storage\
-
-mkdir books
-```
 
 Run the server
 
