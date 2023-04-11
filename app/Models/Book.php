@@ -26,12 +26,21 @@ class Book extends Model
     }
 
     /**
-     * Scope a query to search books.
+     * Scope a query to filter books.
      */
-    public function scopeSearch($query, $search)
+    public function scopeFilter($query, $params)
     {
+        $search = $params['search'] ?? null;
+        $category = $params['category'] ?? null;
+
+        // check if search is not null
         $query->when($search, function($query) use ($search) {
             $query->where('title', 'like', "%{$search}%");
+        });
+
+        // check if category is not null
+        $query->when($category, function($query) use ($category) {
+            $query->where('category_id', $category);
         });
     }
 

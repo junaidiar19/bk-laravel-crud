@@ -27,16 +27,19 @@ class BookController extends Controller
         // get row per page
         $row = request('row', 10);
 
-        // get search keyword
-        $search = request('search', '');
+        // define params
+        $params = request();
 
         // get all books
         $books = Book::with('category')
-                ->search($search)
+                ->filter($params)
                 ->latest()
                 ->paginate($row);
 
-        return view('books.index', compact('books'));
+        // get all categories
+        $categories = $this->categories;
+
+        return view('books.index', compact('books', 'categories'));
     }
 
     /**

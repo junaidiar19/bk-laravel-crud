@@ -26,6 +26,14 @@
               <option value="100" {{ request()->row == 100 ? 'selected' : '' }}>100</option>
             </select>
           </div>
+          <div class="col-sm-3">
+            <select name="category" class="form-control" onchange="this.form.submit()">
+              <option value="">All Category</option>
+              @foreach ($categories as $category)
+                <option value="{{ $category->id }}" {{ request()->category == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+              @endforeach
+            </select>
+          </div>
           <div class="col-12 col-sm-4 ms-auto">
             <input type="text" name="search" id="search" class="form-control" placeholder="Search..." value="{{ request()->search }}">
           </div>
